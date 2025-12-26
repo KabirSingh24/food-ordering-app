@@ -1,0 +1,295 @@
+/* [project]/src/app/globals.css [app-client] (css) */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  color: #1f2937;
+  background: #f6f7fb;
+}
+
+.nav {
+  color: #fff;
+  background: #111827;
+  border-bottom: 2px solid #1f2937;
+  align-items: center;
+  gap: 20px;
+  padding: 16px 24px;
+  display: flex;
+}
+
+.nav a {
+  color: #fff;
+  border-radius: 6px;
+  padding: 6px 8px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background .2s;
+}
+
+.nav a:hover {
+  background: #1f2937;
+}
+
+.nav select {
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  padding: 6px 10px;
+  font-weight: 500;
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 32px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+h2 {
+  margin-bottom: 16px;
+  font-size: 24px;
+}
+
+button {
+  color: #fff;
+  cursor: pointer;
+  background: #2563eb;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-weight: 500;
+  transition: all .2s;
+}
+
+button:hover {
+  background: #1e40af;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  background: #9ca3af;
+}
+
+button.danger {
+  background: #dc2626;
+}
+
+button.danger:hover {
+  background: #991b1b;
+}
+
+input {
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  outline: none;
+  width: 240px;
+  margin-bottom: 12px;
+  padding: 10px 12px;
+}
+
+input:focus {
+  border-color: #2563eb;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding: 16px 20px;
+  transition: transform .2s;
+  display: flex;
+  box-shadow: 0 6px 14px #00000014;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+.card-content {
+  flex-direction: column;
+  gap: 6px;
+  display: flex;
+}
+
+.menu-item {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  display: flex;
+}
+
+.actions {
+  gap: 12px;
+  margin-top: 12px;
+  display: flex;
+}
+
+.empty {
+  color: #6b7280;
+  text-align: center;
+  margin-top: 20px;
+  font-style: italic;
+}
+
+.cart-button {
+  margin-top: 16px;
+  display: inline-block;
+}
+
+.cart-summary {
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  padding: 16px;
+  box-shadow: 0 6px 14px #0000000f;
+}
+
+.cart-item {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  display: flex;
+}
+
+.cart-total {
+  text-align: right;
+  color: #111827;
+  margin-top: 12px;
+  font-size: 1.1rem;
+}
+
+.payment-page {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 20px;
+  display: flex;
+}
+
+.payment-card {
+  text-align: center;
+  background: #fff;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  padding: 40px 32px;
+  box-shadow: 0 10px 25px #00000026;
+}
+
+.payment-card h2 {
+  color: #111827;
+  margin-bottom: 24px;
+  font-size: 24px;
+}
+
+.payment-form input {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 12px 14px;
+  font-size: 16px;
+  transition: border-color .2s;
+  display: block;
+}
+
+.payment-form input:focus {
+  border-color: #667eea;
+}
+
+.payment-form label {
+  color: #374151;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+  font-size: 14px;
+  display: flex;
+}
+
+.payment-form button {
+  color: #fff;
+  cursor: pointer;
+  background: #667eea;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  padding: 12px;
+  font-weight: 600;
+  transition: background .2s;
+}
+
+.payment-form button:hover {
+  background: #5a67d8;
+}
+
+.restaurant-card {
+  background: #fff;
+  border-radius: 12px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding: 16px 20px;
+  transition: transform .2s;
+  display: flex;
+  box-shadow: 0 4px 12px #00000014;
+}
+
+.restaurant-card:hover {
+  transform: translateY(-2px);
+}
+
+.restaurant-card b {
+  font-size: 18px;
+}
+
+.restaurant-card div {
+  flex-direction: column;
+  gap: 4px;
+  display: flex;
+}
+
+.restaurant-card button {
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-weight: 500;
+}
+
+.card-img {
+  object-fit: cover;
+  border-radius: 8px;
+  width: 160px;
+  height: 80px;
+  margin-right: 12px;
+}
+
+@media (max-width: 600px) {
+  .card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  input, button {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=src_app_globals_91e4631d.css.map*/
