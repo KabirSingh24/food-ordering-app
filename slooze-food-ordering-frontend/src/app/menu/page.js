@@ -1,4 +1,6 @@
 "use client";
+export const dynamic = "force-dynamic";
+
 import { useEffect, useState } from "react";
 import { api } from "../api";
 import { useSearchParams, useRouter } from "next/navigation";
@@ -8,12 +10,15 @@ export default function Menu() {
   const [cart, setCart] = useState([]);
   const params = useSearchParams();
   const router = useRouter();
+
   const restaurantId = params.get("rid");
 
   useEffect(() => {
-    api.get(`/menu?restaurantId=${restaurantId}`).then(res => {
-      setMenu(Array.isArray(res) ? res : []);
-    });
+    if (!restaurantId) return;
+
+    api.get(`/menu?restaurantId=${restaurantId}`)
+      .then(res => setMenu(Array.isArray(res) ? res : []))
+      .catch(() => setMenu([]));
   }, [restaurantId]);
 
   return (
@@ -24,12 +29,18 @@ export default function Menu() {
 
       {menu.map(item => (
         <div key={item.id} className="card menu-item">
-          <img src={item.image || "/menu.png"} alt={item.name} className="card-img" />
+          <img
+            src={item.image || "/menu.png"}
+            alt={item.name}
+            className="card-img"
+          />
           <div className="card-content">
             <b>{item.name}</b>
             <span>₹{item.price}</span>
           </div>
-          <button onClick={() => setCart([...cart, item.id])}>Add</button>
+          <button onClick={() => setCart(prev => [...prev, item.id])}>
+            Add
+          </button>
         </div>
       ))}
 
