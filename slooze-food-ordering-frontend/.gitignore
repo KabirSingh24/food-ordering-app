@@ -1,6 +1,5 @@
 # Next.js
-.next/
-.next/dev
+.next
 out/
 
 # Node
