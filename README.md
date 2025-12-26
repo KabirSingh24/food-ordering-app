@@ -100,15 +100,19 @@ http://localhost:3000
 
 ## **Live Demo**
 
-<!-- 📽️ Application Walkthrough: 
-https://drive.google.com/file/d/1ppIHtSDkUg-Zy1dLrqXC0hHzcfpfZ4SNEyGNmw6KMkM/view?usp=sharing -->
+A complete walkthrough of the application demonstrating:
+- Role-based login
+- Restaurant & menu browsing
+- Cart and order creation
+- Checkout & cancel flows
+- Country-based access control
 
-<iframe width="560" height="315"
-  src="https://drive.google.com/file/d/1ppIHtSDkUg-Zy1dLrqXC0hHzcfpfZ4SNEyGNmw6KMkM/preview"
-  allow="autoplay; encrypted-media"
-  allowfullscreen>
-</iframe>
+📽️ **Watch the demo here:**  
+https://drive.google.com/file/d/1ppIHtSDkUg-Zy1dLrqXC0hHzcfpfZ4SNEyGNmw6KMkM/view?usp=sharing
+>
 
+
+---
 
 **##API Endpoints**
 *Restaurants & Menu*
